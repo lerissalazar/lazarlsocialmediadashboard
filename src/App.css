@@ -1,31 +1,7 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +12,190 @@
     transform: rotate(360deg);
   }
 }
+
+.platformCard {
+  display: flex;
+  justify-content: space-between;
+  width: 70rem;
+  margin-top: 1rem;
+}
+
+.bottomplatformCard {
+  display: flex;
+  justify-content: space-between;
+  width: 70rem;
+  margin-top: 1rem;
+}
+
+.platformSection {
+  display: flex;
+  justify-content: center;
+}
+
+.bottomPlatformSection {
+  display: flex;
+  justify-content: center;
+}
+
+.headerPlace {
+  margin-left: 13rem;
+}
+
+.secondheaderPlace {
+  margin-left: 13rem;
+  margin-top: 2rem;
+}
+
+.platformSquare {
+  text-align: center;
+  background-color: hsl(228, 28%, 20%);
+  width: 16.5rem;
+  border-radius: 3%;
+}
+
+.bottomPlatformSquare {
+  text-align: center;
+  background-color: hsl(228, 28%, 20%);
+  width: 16.5rem;
+  border-radius: 3%;
+  display: flex;
+}
+
+.firstPlatformRow {
+  padding-left: 1.5rem;
+}
+
+.secondPlatformRow {
+  padding-left: 6.5rem;
+  padding-top: 1.5rem;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #1f212e 0%,
+    #1f212e 35%,
+    #1e202a 35%,
+    #1e202a 100%
+  );
+} 
+
+@media screen and (max-width: 400px){
+  .platformCard {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .platformSquare {
+    /* margin-left: 5rem; */
+    margin-bottom: 1.5rem;
+  }
+  .headerPlace {
+    margin-left: 0%;
+  }
+
+  .bottomplatformCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottomPlatformSquare {
+    margin-bottom: 1.5rem;
+    margin-left: 3.5rem;
+  }
+
+  .Container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.usernameText {
+  color: #8b97c6;
+  font-size: 14px;
+}
+
+.numberText {
+  color: #ffffff;
+  font-size: 3.5rem;
+}
+
+.followerText {
+  color: #1db489;
+  font-size: 15px;
+}
+
+.subsText {
+  color: #8b97c6;
+  font-size: 10px;
+}
+
+.totalText {
+  color: #8b97c6;
+}
+
+.headerText {
+  color: #ffffff;
+}
+
+.likesText {
+  color: #8b97c6;
+  font-size: 20px;
+}
+
+.viewsText {
+  color: white;
+  font-size: 30px;
+}
+
+.numbersText {
+  color: #1db489;
+  font-size: 16px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  @apply bg-slate-300;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 5px;
+  margin: 0 20px;
+  width: 50px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.ball {
+  background: #fff;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  transition: transform 0.15s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.checkbox:checked + .label {
+  background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
