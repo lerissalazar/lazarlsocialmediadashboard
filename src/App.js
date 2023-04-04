@@ -6,6 +6,8 @@ import BottomPlatformComponent from './components/bottomplatformcomponents';
 import LastPlatformComponent from './components/lastplatformcomponent';
 import { Container } from 'react-bootstrap';
 
+//peer review : Drew, I like the use of media queries for responsivess and the props instead of hard coding, the assignment isnt finished but you were getting there.
+
 function App() {
   return (
     <>
